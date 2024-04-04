@@ -1,12 +1,12 @@
 .task-card {
-    border: 1px solid #aaa; /* Adjust border color to match task card */
+    border: 1px solid #aaa; 
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 15px;
-    background: linear-gradient(145deg, #444, #222); /* Gradient background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadowing */
-    color: #ffffff; /* Dark text color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nicer font */
+    background: linear-gradient(145deg, #444, #222); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   }
   
   .task-info {
@@ -23,7 +23,7 @@
   }
   
   .description-property {
-    margin-top: 10px; /* Separate description from other properties */
+    margin-top: 10px;
   }
   
   .task-property {
@@ -34,7 +34,7 @@
   .property-label {
     font-weight: bold;
     margin-right: 3px;
-    color: #f3ecec; /* Darker gray text color */
+    color: #f3ecec; 
   }
   
   .property-value {
@@ -42,8 +42,8 @@
   }
   
   textarea.property-value {
-    width: calc(100% - 24px); /* Adjust width for textarea */
-    height: 100px; /* Adjust height for textarea */
+    width: calc(100% - 24px); 
+    height: 100px;
   }
   
   .action-button {

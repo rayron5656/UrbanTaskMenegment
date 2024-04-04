@@ -30,7 +30,7 @@ export class TaskListComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
       if (result) {
-        // User confirmed deletion, delete the task
+        
         this.taskService.deleteTask(taskId);
       }
     });

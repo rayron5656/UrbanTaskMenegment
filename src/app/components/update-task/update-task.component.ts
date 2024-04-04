@@ -44,9 +44,7 @@ export class UpdateTaskComponent implements OnInit {
 
   onSubmit() {
     if (this.taskForm.valid) {
-      // Here, you can handle form submission logic, like saving the task
       const task : task = this.getTaskFromValues(this.taskForm.value);
-      // Clear the form after submission
       this.taskForm.reset({
         status: 'Pending'
       });

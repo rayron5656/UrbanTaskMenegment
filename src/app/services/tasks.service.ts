@@ -21,7 +21,7 @@ import { task } from '../models/task.model';
       const storedTasks = localStorage.getItem('tasks');
       if (storedTasks) {
         this.tasks = JSON.parse(storedTasks);
-        this.taskSubject.next([...this.tasks]); // Emit notification to subscribers
+        this.taskSubject.next([...this.tasks]); 
       }
     }
   
@@ -31,8 +31,8 @@ import { task } from '../models/task.model';
   
     addTask(task: task) {
       this.tasks.push(task);
-      this.saveTasks(); // Save tasks to local storage
-      this.taskSubject.next([...this.tasks]); // Emit notification to subscribers
+      this.saveTasks(); 
+      this.taskSubject.next([...this.tasks]); 
     }
   
     updateTask(taskId: number, updatedTask: task) {
@@ -40,14 +40,14 @@ import { task } from '../models/task.model';
       const index = this.tasks.findIndex(task => task.id === taskId);
       if (index !== -1) {
         this.tasks[index] = updatedTask;
-        this.saveTasks(); // Save tasks to local storage
-        this.taskSubject.next([...this.tasks]); // Emit notification to subscribers
+        this.saveTasks();
+        this.taskSubject.next([...this.tasks]); 
       }
     }
   
     deleteTask(taskId: number) {
       this.tasks = this.tasks.filter(task => task.id !== taskId);
-      this.saveTasks(); // Save tasks to local storage
-      this.taskSubject.next([...this.tasks]); // Emit notification to subscribers
+      this.saveTasks(); 
+      this.taskSubject.next([...this.tasks]); 
     }
   }

@@ -39,19 +39,18 @@ export class CreateTaskComponent implements OnInit {
   }
 
   private generateUniqueId(): number {
-    // Generate a random number and ensure its uniqueness
     let newId: number;
     do {
-      newId = Math.floor(Math.random() * 1000000); // Example range, adjust as needed
+      newId = Math.floor(Math.random() * 1000000); 
     } while (this.tasks.some(task => task.id === newId));
     return newId;
   }
 
   onSubmit() {
     if (this.taskForm.valid) {
-      // Here, you can handle form submission logic, like saving the task
+
       const task : task = this.getTaskFromValues(this.taskForm.value);
-      // Clear the form after submission
+
       this.taskForm.reset({
         status: 'Pending'
       });

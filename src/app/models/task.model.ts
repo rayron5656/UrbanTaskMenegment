@@ -16,7 +16,7 @@ export class task {
     }
 
 
-    //getters
+
     getId(): number {
         return this.id;
     }
@@ -37,7 +37,7 @@ export class task {
         return this.status;
     }
 
-    //setters
+
     setId(id: number): void {
         this.id = id;
     }
