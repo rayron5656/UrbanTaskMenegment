@@ -1,0 +1,37 @@
+.create-task-button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 8px 16px; 
+    font-size: 20px; 
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 15%;
+    margin: auto;
+    margin-bottom: 0.5em;
+  }
+  
+  .plus-icon {
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+
+  .plus-icon svg {
+    fill: currentColor;
+    width: 20px; 
+    height: 20px;
+  }
+  h2{
+    margin-top: 5%;
+  }
+
+  .create-task-button:hover {
+    background-color: #555; 
+  }

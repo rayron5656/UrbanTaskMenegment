@@ -1,0 +1,54 @@
+.add-task-form {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nicer font */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    width: 20%;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .error-message {
+    color: #ff0000; /* Red error message color */
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #e2c836; /* Blue button color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+  }
+  
+  button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+  }

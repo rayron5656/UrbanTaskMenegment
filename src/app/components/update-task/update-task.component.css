@@ -1,0 +1,79 @@
+.task-card {
+    border: 1px solid #aaa; /* Adjust border color to match task card */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: linear-gradient(145deg, #444, #222); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadowing */
+    color: #ffffff; /* Dark text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nicer font */
+  }
+  
+  .task-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-properties {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    justify-content: space-between; 
+  }
+  
+  .description-property {
+    margin-top: 10px; /* Separate description from other properties */
+  }
+  
+  .task-property {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .property-label {
+    font-weight: bold;
+    margin-right: 3px;
+    color: #f3ecec; /* Darker gray text color */
+  }
+  
+  .property-value {
+    margin-left: 3px;
+  }
+  
+  textarea.property-value {
+    width: calc(100% - 24px); /* Adjust width for textarea */
+    height: 100px; /* Adjust height for textarea */
+  }
+  
+  .action-button {
+    background-color: #e2c836;
+    color: #fff; 
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cancel-button{
+    background-color: #dfd182;
+    color: #fff; 
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #d4b026;
+  }
+
+  button:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+  }
+
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }

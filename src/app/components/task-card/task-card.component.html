@@ -1,0 +1,30 @@
+<div class="task-card">
+  <div class="task-info">
+    <div class="task-properties">
+      <div class="task-property">
+        <span class="property-label">ID:</span>
+        <span class="property-value">{{ task.id }}</span>
+      </div>
+      <div class="task-property">
+        <span class="property-label">Title:</span>
+        <span class="property-value">{{ task.title }}</span>
+      </div>
+      <div class="task-property">
+        <span class="property-label">Due Date:</span>
+        <span class="property-value">{{ task.dueDate | date }}</span>
+      </div>
+      <div class="task-property">
+        <span class="property-label">Status:</span>
+        <span class="property-value">{{ task.status }}</span>
+      </div>
+      <div class="task-property ">
+        <button type="button" (click)="onEdit(this.task.id)" class="action-button">Edit</button>
+        <button  type="button" (click)="callParentDialog(this.task.id)" class="action-button">delete</button>
+      </div>
+    </div>
+    <div class="task-description">
+      <p class="property-label">Description:</p>
+      <p>{{ task.description }}</p>
+    </div>
+  </div>
+</div>

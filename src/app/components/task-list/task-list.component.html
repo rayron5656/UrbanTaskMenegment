@@ -1,0 +1,4 @@
+<div *ngFor="let task of tasks">
+    <app-task-card [childDeleteFunction]="deleteTask" [hidden]="currentTaskID == task.id" [task]="task"></app-task-card>
+    <app-update-task [hidden]="currentTaskID != task.id" [task]="task">  </app-update-task>
+</div>

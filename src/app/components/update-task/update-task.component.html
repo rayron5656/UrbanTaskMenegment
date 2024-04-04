@@ -1,0 +1,40 @@
+<div class="task-card">
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="task-info">
+      <div class="task-properties">
+        <div class="task-property">
+          <span class="property-label">Title:</span>
+          <input type="text" formControlName="title" class="property-value">
+          <div *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched" class="error-message">Title is required.</div>
+        </div>
+        <div class="task-property">
+          <span class="property-label">Due Date:</span>
+          <input type="date" formControlName="dueDate" class="property-value" placeholder="30.10.1995">
+          <div *ngIf="taskForm.get('dueDate')?.invalid && taskForm.get('dueDate')?.touched" class="error-message">Due Date is required.</div>
+        </div>
+        <div class="task-property">
+          <span class="property-label">Status:</span>
+          <select formControlName="status" class="property-value">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+            <option value="In Progress">In Progress </option>
+          </select>
+        </div>
+        <div class="buttons">
+          <div class="task-property">
+            <button type="button" [disabled]="taskForm.invalid" (click)="onSubmit()" class="action-button">Save</button>
+          </div>
+          <div class="task-property">
+            <button type="button"  (click)="onCancel()" class="cancel-button">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div class="description-property">
+        <div class="task-property">
+          <span class="property-label">Description:</span>
+          <textarea formControlName="description" class="property-value"></textarea>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>

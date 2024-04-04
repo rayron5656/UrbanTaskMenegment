@@ -1,0 +1,48 @@
+.task-card {
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: linear-gradient(145deg, #444, #222); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadowing */
+  color: #ffffff; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-properties {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.property-label {
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.property-value {
+  margin-left: 3px;
+}
+
+.action-button {
+  background-color: #e2c836;
+  color: #fff; 
+  padding: 8px 16px; 
+  margin :5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #d4b026;
+}
+
+button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed;
+}
